@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Input Range Project - Coding Assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+<!-- Seema Added Below script-->
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+<!--end--->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container" id="container">
+            <form action="">
+                <h1>Progress Bars Demo</h1>
+                <section id="progressbars-section">
+                </section>
+
+  <div class="button_group">
+                  
+				  <div class="dropdown dropdown-list">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"data-toggle="dropdown" >
+                    <span data-bind="label" >progressbar1</span>
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">progressbar1</a></li>
+                            <li><a href="#">progressbar2</a></li>
+                            <li><a href="#">progressbar3</a></li>
+                        </ul>
+                    </div>
+              
+                    <button type="button" class="btn btn-default minus25-button">-25</button>
+                    <button type="button" class="btn btn-default minus10-button">-10</button>
+                    <button type="button" class="btn btn-default plus10-button">+10</button>
+                    <button type="button" class="btn btn-default plus25-button">+25</button>
+                </div>
+            </form>
+        </div>
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="/bower_components/ractive/ractive.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script id="progressbar-template" type="text/ractive">
+            <div class="progress">
+             
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{progressbar1.fill_width_value}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progressbar1.fill_width_value}}%; background-color: {{progressbar1.color}}">
+			   <span class="progress-bar-percentage-text">{{progressbar1.percent_value}}%</span>
+              </div>
+            </div>
+            <div class="progress">
+              
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{progressbar2.fill_width_value}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progressbar2.fill_width_value}}%; background-color: {{progressbar2.color}}">
+			  <span class="progress-bar-percentage-text">{{progressbar2.percent_value}}%</span>
+              </div>
+            </div>
+            <div class="progress">
+              
+              <div class="progress-bar" role="progressbar" aria-valuenow="{{progressbar3.fill_width_value}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progressbar3.fill_width_value}}%; background-color: {{progressbar3.color}}">
+			  <span class="progress-bar-percentage-text">{{progressbar3.percent_value}}%</span>
+              </div>
+            </div>
+
+
+
+
+        </script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
